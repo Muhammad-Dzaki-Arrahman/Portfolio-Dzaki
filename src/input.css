@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-second bg-opacity-60;
+  backdrop-filter: blur(4px);
+}
+
+.list-warna {
+  @apply lg:text-navbar;
+}
+
+.warna-nama {
+  @apply text-navbar;
+}
+
+.hamberger-line {
+  @apply w-[30px] h-[2px] my-2 block bg-zinc-200;
+}
+
+.hamberger-active > span:nth-child(1) {
+  @apply origin-top-left rotate-45;
+}
+.hamberger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamberger-active > span:nth-child(3) {
+  @apply origin-bottom-left -rotate-45;
+}
