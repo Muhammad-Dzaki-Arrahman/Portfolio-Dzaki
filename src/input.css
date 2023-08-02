@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-second bg-opacity-60;
-  backdrop-filter: blur(4px);
+  @apply fixed z-[9999] bg-second bg-opacity-60 backdrop-blur-sm;
 }
 
 .list-warna {
